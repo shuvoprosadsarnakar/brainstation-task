@@ -6,14 +6,14 @@ class DioClient {
 
   DioClient() {
     _dio.options.baseUrl = "https://api.github.com/search/repositories?q=";
-    _dio.interceptors.add(PrettyDioLogger(
-      requestHeader: true,
-      responseHeader: false,
-      requestBody: true,
-      responseBody: false,
-      error: true,
-      compact: true,
-    ));
+    // _dio.interceptors.add(PrettyDioLogger(
+    //   requestHeader: true,
+    //   responseHeader: false,
+    //   requestBody: true,
+    //   responseBody: false,
+    //   error: true,
+    //   compact: true,
+    // ));
   }
 
   Dio get client => _dio;

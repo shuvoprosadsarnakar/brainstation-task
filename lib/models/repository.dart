@@ -37,7 +37,7 @@ class Item {
   bool private;
   Owner owner;
   String htmlUrl;
-  String description;
+  String? description;
   bool fork;
   String url;
   String forksUrl;

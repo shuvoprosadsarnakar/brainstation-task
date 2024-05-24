@@ -1,4 +1,3 @@
-import 'package:brainstation/providers/details_provider.dart';
 import 'package:brainstation/providers/home_provider.dart';
 import 'package:brainstation/routes/router.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +16,6 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => HomeProvider()),
-        ChangeNotifierProvider(create: (context) => DetailsProvider()),
       ],
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
