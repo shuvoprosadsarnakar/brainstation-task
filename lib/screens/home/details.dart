@@ -43,7 +43,7 @@ class Details extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(
-              ' Updated at ${item.updatedAt ?? ""}',
+              ' Updated at ${item.updatedAt}',
               style: Theme.of(context).textTheme.bodyLarge,
             )
           ],
